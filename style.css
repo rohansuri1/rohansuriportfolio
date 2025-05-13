@@ -21,7 +21,7 @@ body{
 
 
 .header_section{
-    background: url(Downloads/portfolio.jpeg);
+    background: url(portfolio.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
