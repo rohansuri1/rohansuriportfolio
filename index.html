@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan Suri Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <div class="header_section">
+        <nav>
+            <div class="logo">
+                <!-- Add your logo here if needed -->
+            </div>
+            <ul class="menu">
+                <li data-aos="fade-down" data-aos-duration="2000" data-aos-delay="100"><a href="#education">Education</a></li>
+                <li data-aos="fade-down" data-aos-duration="2000" data-aos-delay="200"><a href="#experience">Experience</a></li>
+                <li data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300"><a href="#skills">Skills</a></li>
+                <li data-aos="fade-down" data-aos-duration="2000" data-aos-delay="600"><a href="Downloads/RohanSuriResume.pdf (1).pdf" target="_blank">Resume</a></li>
+                <li data-aos="fade-down" data-aos-duration="2000" data-aos-delay="900"><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <div class="client_info">
+            <h1>Computer Engineering Undergraduate (B.Tech)</h1>
+            <h2>Rohan Suri</h2>
+            <p>
+                <!-- Add a short bio or tagline here -->
+            </p>
+            <div class="icon">
+                <li><a href="https://www.linkedin.com/in/rohansuri11/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.instagram.com/rohansuri_11/"><i class="fa-brands fa-instagram"></i></a></li>
+            </div>
+            <button onclick="document.getElementById('details_section').scrollIntoView({ behavior: 'smooth' });">
+                VIEW MORE
+            </button>
+        </div>
+    </div>
+
+    <!-- Scroll target: Sections below -->
+    <div id="details_section">
+        <section id="education" data-aos="fade-up">
+            <h2>Education</h2>
+            <p><b>BTech in Computer Engineering</b></p></b>
+            <p><b>KJ Somaiya College Of Engineering,Mumbai</b>
+                <br><i>AVG GPA : 9.013</i></p>
+                <br>
+                <br>
+                <br>
+            <p><b>Pace Junior Science College,Thane(HSC)</b>
+                <br><i> 84% in 12th HSC</i></p></b>
+        </section>
+
+        <section id="experience" data-aos="fade-up">
+            <h2>Experience</h2>
+            <p><b>Zantus LifeSciences — Software Engineering Intern</b>
+                Dec 2024 – Jan 2025
+                
+                Optimized website UI/UX and integrated CI/CD pipelines for faster deployment.
+                
+                Aligned new features with the company’s product vision and roadmap.
+                
+                Supported inventory and supply chain management for timely deliveries.
+                
+                Contributed to audits, data analysis, and literature review during research support.
+                <br>
+                <br>
+                <br>
+        
+                <b>Deloitte Australia — Technology Project</b>
+                Dec 2024
+                
+                Completed data analysis simulation for Deloitte’s Technology team.
+                
+                Built a client-ready dashboard using Tableau and wrote a functional proposal.
+                
+                Used Excel to organize data and derive strategic business insights.
+                <br>
+                <br>
+                <br>
+            <b>BloomBox KJSCE — FY Representative</b>
+                Oct 2023 – Apr 2024
+                
+                Served as liaison between the Entrepreneurship Cell and first-year students.
+                
+                Led planning and execution of entrepreneurship events and workshops.
+                
+                Negotiated and secured multiple partnerships for E-Summit 2024.
+                
+                Demonstrated leadership by guiding teams through event execution.
+                <br>
+                <br>
+                <br>
+            <b>Student Intern — Oil Synthesis Project</b>
+                Jan 2024 – May 2024
+                
+                Conducted research on renewable oil synthesis under faculty mentorship.
+                
+                Participated in experimental design and lab testing using sustainable feedstocks.
+                
+                Contributed to innovation in green energy through active R&D involvement.</p>
+        </section>
+
+        <section id="skills" data-aos="fade-up">
+            <h2>Skills</h2>
+            <p><b>Skills:</b> <i>C++,Java, SQL, Python,Web Development, Data Analysis,Tableau, Autocad, Bootstrap,Excel</i>
+           <br><b>Soft Skills:</b> <i>Teamwork, Bias for action, Deliver Results, Leadership, Problem Solving</i></p>
+        </section>
+
+        <section id="contact" data-aos="fade-up">
+            <h2>Contact Info</h2>
+            <p><b>+91 8928200128
+                <br>rohan.suri@somaiya.edu</b><p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        let bar = document.querySelector(".bars .fa-bars");
+        let menu = document.querySelector(".menu");
+
+        bar.addEventListener("click", function () {
+            menu.classList.toggle("show_menu");
+        });
+
+        AOS.init();
+
+        var typed = new Typed(".text", {
+            strings: ["Designer", "Developer", "Plakson"],
+            typeSpeed: 100,
+            backSpeed: 80,
+            showCursor: false,
+            loop: true,
+            loopCount: Infinity
+        });
+    </script>
+</body>
+</html>
